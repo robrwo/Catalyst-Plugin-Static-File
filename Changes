@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Toolchain]
+  - Sign the distribution.
 
 v0.1.0    2023-06-07 20:44:05+01:00 Europe/London
   - Initial release.
