@@ -8,7 +8,7 @@ use Moose::Role;
 
 use File::stat;
 use IO::File::WithPath;
-use MIME::Types;
+use Plack::MIME;
 
 use namespace::autoclean;
 
@@ -45,7 +45,7 @@ It assumes that you know what you're doing. If the file does not exist, it will 
 
 =item *
 
-You can override the MIME type.
+It uses L<Plack::MIME> to identify the content type, but you can override that.
 
 =item *
 
@@ -84,8 +84,7 @@ sub serve_static_file {
         binmode($fh);
         $res->body($fh);
 
-        state $mt = MIME::Types->new( only_complete => 1 );
-        $type //= $mt->mimeTypeOf($path);
+        $type //= Plack::MIME->mime_type($path);
 
         my $headers = $res->headers;
         $headers->content_type("$type");
