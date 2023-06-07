@@ -1,0 +1,4 @@
+Catalyst-Plugin-Static-File-*/
+Catalyst-Plugin-Static-File-*.tar.gz
+.build/
+cpanfile.snapshot
