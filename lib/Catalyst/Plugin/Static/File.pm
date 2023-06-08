@@ -82,10 +82,6 @@ sub serve_static_file {
 
     my $abs = File::Spec->rel2abs( "$path" );
 
-    unless ( -e $abs ) {
-        Catalyst::Exception->throw( "File ${abs} was not found" );
-    }
-
     my $fh = IO::File->new( $abs, "r" );
     if ( defined $fh ) {
         binmode($fh);

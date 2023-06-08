@@ -47,7 +47,7 @@ subtest "bad file" => sub {
       [
         {
             level   => "error",
-            message => all( isa('Catalyst::Exception'), methods( message => "File ${rel} was not found" ) ),
+            message => all( isa('Catalyst::Exception'), methods( message => "Unable to open ${rel} for reading" ) ),
         }
       ],
       "logged exception";
