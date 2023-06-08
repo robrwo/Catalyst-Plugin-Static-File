@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Fixed typo in Changes for v0.1.3.
+
   [Tests]
   - Added tests with Plack::Middleware::ConditionalGET.
 
@@ -13,7 +16,7 @@ v0.1.3    2023-06-08 15:35:31+01:00 Europe/London
 
   - Removed useless check for file existence (thanks @barubary@infosec.exchange).
 
-  - State the open filehandle (thanks @barubary@infosec.exchange).
+  - Stat the open filehandle (thanks @barubary@infosec.exchange).
 
 v0.1.2    2023-06-08 12:18:04+01:00 Europe/London
   [Enhancements]
