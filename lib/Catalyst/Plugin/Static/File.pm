@@ -93,7 +93,7 @@ sub serve_static_file {
         my $headers = $res->headers;
         $headers->content_type("$type");
 
-        my $stat = stat($abs);
+        my $stat = stat($fh);
         $headers->content_length( $stat->size );
         $headers->last_modified( $stat->mtime );
 
