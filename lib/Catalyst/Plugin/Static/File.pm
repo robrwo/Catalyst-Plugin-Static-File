@@ -52,6 +52,10 @@ It uses L<Plack::MIME> to identify the content type, but you can override that.
 It uses L<IO::File::WithPath>, which should play nicely with L<Plack::Middleware::XSendfile> and
 L<Plack::Middleware::ETag>.
 
+=item *
+
+It does not log anything.
+
 =back
 
 =method serve_static_file
