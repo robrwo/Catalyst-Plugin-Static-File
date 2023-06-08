@@ -99,7 +99,7 @@ sub serve_static_file {
 
     }
     else {
-        Catalyst::Exception->throw( "Unable to open ${abs} for reading" );
+        Catalyst::Exception->throw( "Unable to open ${abs} for reading: $!" );
     }
 
     return 1;

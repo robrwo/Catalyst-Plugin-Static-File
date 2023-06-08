@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Enhabncements]
+  - Include the system error when the file cannot be opened (thanks @barubary@infosec.exchange).
+
   [Bug Fixes]
   - Fixed another place where absolute path was not used.
 
