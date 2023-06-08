@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Fixed another place where absolute path was not used.
 
 v0.1.2    2023-06-08 12:18:04+01:00 Europe/London
   [Enhancements]
