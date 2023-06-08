@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+
+v0.1.3    2023-06-08 15:35:31+01:00 Europe/London
   [Enhancements]
   - Include the system error when the file cannot be opened (thanks @barubary@infosec.exchange).
 
