@@ -6,9 +6,11 @@ use v5.14;
 
 use Moose::Role;
 
+use File::Spec;
 use File::stat;
-use IO::File::WithPath;
+use IO::File;
 use Plack::MIME;
+use Plack::Util;
 
 use namespace::autoclean;
 
@@ -49,8 +51,7 @@ It uses L<Plack::MIME> to identify the content type, but you can override that.
 
 =item *
 
-It uses L<IO::File::WithPath>, which should play nicely with L<Plack::Middleware::XSendfile> and
-L<Plack::Middleware::ETag>.
+It adds a file path to the file handle, plays nicely with L<Plack::Middleware::XSendfile> and L<Plack::Middleware::ETag>.
 
 =item *
 
@@ -83,9 +84,10 @@ sub serve_static_file {
         Catalyst::Exception->throw( "File ${path} was not found" );
     }
 
-    my $fh = IO::File::WithPath->new( $path, "r" );
+    my $fh = IO::File->new( $path, "r" );
     if ( defined $fh ) {
         binmode($fh);
+        Plack::Util::set_io_path( $fh, File::Spec->rel2abs( "$path" ) );
         $res->body($fh);
 
         $type //= Plack::MIME->mime_type($path);

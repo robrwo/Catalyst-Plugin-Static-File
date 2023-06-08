@@ -32,8 +32,7 @@ Unlike [Catalyst::Plugin::Static::File](https://metacpan.org/pod/Catalyst%3A%3AP
 serve multiple files.
 - It assumes that you know what you're doing. If the file does not exist, it will throw an fatal error.
 - It uses [Plack::MIME](https://metacpan.org/pod/Plack%3A%3AMIME) to identify the content type, but you can override that.
-- It uses [IO::File::WithPath](https://metacpan.org/pod/IO%3A%3AFile%3A%3AWithPath), which should play nicely with [Plack::Middleware::XSendfile](https://metacpan.org/pod/Plack%3A%3AMiddleware%3A%3AXSendfile) and
-[Plack::Middleware::ETag](https://metacpan.org/pod/Plack%3A%3AMiddleware%3A%3AETag).
+- It adds a file path to the file handle, plays nicely with [Plack::Middleware::XSendfile](https://metacpan.org/pod/Plack%3A%3AMiddleware%3A%3AXSendfile) and [Plack::Middleware::ETag](https://metacpan.org/pod/Plack%3A%3AMiddleware%3A%3AETag).
 - It does not log anything.
 
 # METHODS

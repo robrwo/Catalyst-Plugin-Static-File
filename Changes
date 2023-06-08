@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Use Plack::Util to set file path instead of IO::File::WithPath.
+
   [Documentation]
   - Add note about the lack of logging.
 
