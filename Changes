@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Enhancements]
   - Use Plack::Util to set file path instead of IO::File::WithPath.
 
+  [Bug Fixes]
+  - The file path is resolved to an absolute path before anything is done with it.
+
   [Documentation]
   - Add note about the lack of logging.
 

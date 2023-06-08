@@ -41,13 +41,13 @@ subtest "bad file" => sub {
     my ( $res, $c ) = ctx_request( GET '/?file=' . $file->basename );
     is $res->code, HTTP_INTERNAL_SERVER_ERROR, "status (expected error)";
 
-    my $rel = $file->relative($Bin);
+    my $rel = $file->absolute;
 
     cmp_deeply $c->log->msgs,
       [
         {
             level   => "error",
-            message => all( isa('Catalyst::Exception'), methods( message => "File t/${rel} was not found" ) ),
+            message => all( isa('Catalyst::Exception'), methods( message => "File ${rel} was not found" ) ),
         }
       ],
       "logged exception";

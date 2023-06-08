@@ -80,22 +80,24 @@ sub serve_static_file {
 
     my $res = $c->res;
 
-    unless ( -e $path ) {
-        Catalyst::Exception->throw( "File ${path} was not found" );
+    my $abs = File::Spec->rel2abs( "$path" );
+
+    unless ( -e $abs ) {
+        Catalyst::Exception->throw( "File ${abs} was not found" );
     }
 
-    my $fh = IO::File->new( $path, "r" );
+    my $fh = IO::File->new( $abs, "r" );
     if ( defined $fh ) {
         binmode($fh);
-        Plack::Util::set_io_path( $fh, File::Spec->rel2abs( "$path" ) );
+        Plack::Util::set_io_path( $fh, $abs );
         $res->body($fh);
 
-        $type //= Plack::MIME->mime_type($path);
+        $type //= Plack::MIME->mime_type($abs);
 
         my $headers = $res->headers;
         $headers->content_type("$type");
 
-        my $stat = stat($path);
+        my $stat = stat($abs);
         $headers->content_length( $stat->size );
         $headers->last_modified( $stat->mtime );
 
