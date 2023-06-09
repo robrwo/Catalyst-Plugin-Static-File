@@ -23,6 +23,7 @@ on 'test' => sub {
   requires "Moose" => "0";
   requires "Path::Tiny" => "0";
   requires "Plack::Builder" => "0";
+  requires "Plack::Middleware::ConditionalGET" => "0";
   requires "Plack::Middleware::XSendfile" => "0";
   requires "Test::Log::Dispatch" => "0";
   requires "Test::More" => "0";
