@@ -41,13 +41,13 @@ subtest "bad file" => sub {
     my ( $res, $c ) = ctx_request( GET '/?file=' . $file->basename );
     is $res->code, HTTP_INTERNAL_SERVER_ERROR, "status (expected error)";
 
-    my $rel = $file->absolute;
+    my $abs = $file->absolute->canonpath;
 
     cmp_deeply $c->log->msgs,
       [
         {
             level   => "error",
-            message => all( isa('Catalyst::Exception'), methods( message => "Unable to open ${rel} for reading: No such file or directory" ) ),
+            message => all( isa('Catalyst::Exception'), methods( message => "Unable to open ${abs} for reading: No such file or directory" ) ),
         }
       ],
       "logged exception";

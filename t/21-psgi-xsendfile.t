@@ -21,12 +21,12 @@ my $app = builder {
 
 my $mech = Test::WWW::Mechanize::PSGI->new( app => $app );
 
-my $file = path($Bin)->child("static/hello.txt");
+my $file = path($Bin)->child("static/hello.txt")->absolute;
 
 my $res = $mech->get( '/?file=' . $file->basename );
 is $res->code, 200, 'GET /?file=hello.txt';
 
 is $res->content, "", "no body";
-is $res->header('X-Sendfile'), "$file", "X-Sendfile";
+is $res->header('X-Sendfile'), $file->canonpath, "X-Sendfile";
 
 done_testing;
