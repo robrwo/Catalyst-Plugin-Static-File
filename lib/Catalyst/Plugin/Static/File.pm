@@ -14,7 +14,7 @@ use Plack::Util;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.1.5';
+our $VERSION = 'v0.1.6';
 
 =head1 SYNOPSIS
 
