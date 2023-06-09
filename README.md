@@ -26,7 +26,7 @@ $c->serve_static_file( $absolute_path, $type );
 
 This plugin provides a simple method for your [Catalyst](https://metacpan.org/pod/Catalyst) app to send a specific static file.
 
-Unlike [Catalyst::Plugin::Static::File](https://metacpan.org/pod/Catalyst%3A%3APlugin%3A%3AStatic%3A%3AFile),
+Unlike [Catalyst::Plugin::Static::Simple](https://metacpan.org/pod/Catalyst%3A%3APlugin%3A%3AStatic%3A%3ASimple),
 
 - It only supports serving a single file, not a directory of static files. Use [Plack::Middleware::Static](https://metacpan.org/pod/Plack%3A%3AMiddleware%3A%3AStatic) if you want to
 serve multiple files.

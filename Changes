@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Fixed a silly typo in the DESCRIPTION.
 
 v0.1.4    2023-06-09 09:40:30+01:00 Europe/London
   [Documentation]

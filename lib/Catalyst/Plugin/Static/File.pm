@@ -32,7 +32,7 @@ In a controller method:
 
 This plugin provides a simple method for your L<Catalyst> app to send a specific static file.
 
-Unlike L<Catalyst::Plugin::Static::File>,
+Unlike L<Catalyst::Plugin::Static::Simple>,
 
 =over
 
