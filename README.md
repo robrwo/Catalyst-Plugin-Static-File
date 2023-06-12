@@ -53,6 +53,13 @@ It returns a true value on success.
 
 If you want to use conditional requests, use [Plack::Middleware::ConditionalGET](https://metacpan.org/pod/Plack%3A%3AMiddleware%3A%3AConditionalGET).
 
+# SECURITY
+
+The [serve\_static\_file](https://metacpan.org/pod/serve_static_file) method does not validate the file that is passed to it.
+
+You should ensure that arbitrary filenames are not passed to it. You should strictly validate any external data that is
+used for generating the filename.
+
 # SUPPORT FOR OLDER PERL VERSIONS
 
 This module requires Perl v5.14 or later.

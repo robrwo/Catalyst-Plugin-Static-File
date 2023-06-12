@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Added a SECURITY section.
 
 v0.1.5    2023-06-09 09:59:02+01:00 Europe/London
   [Documentation]

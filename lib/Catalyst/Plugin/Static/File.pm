@@ -105,6 +105,13 @@ sub serve_static_file {
     return 1;
 }
 
+=head1 SECURITY
+
+The L<serve_static_file> method does not validate the file that is passed to it.
+
+You should ensure that arbitrary filenames are not passed to it. You should strictly validate any external data that is
+used for generating the filename.
+
 =head1 SUPPORT FOR OLDER PERL VERSIONS
 
 This module requires Perl v5.14 or later.
