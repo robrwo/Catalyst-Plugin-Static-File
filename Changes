@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Added a SECURITY section.
 
+  [Tests]
+  - Added required module for tests to work around broken CPAN Testers environments.
+
 v0.1.5    2023-06-09 09:59:02+01:00 Europe/London
   [Documentation]
   - Fixed a silly typo in the DESCRIPTION.
