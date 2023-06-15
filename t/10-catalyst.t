@@ -42,12 +42,13 @@ subtest "bad file" => sub {
     is $res->code, HTTP_INTERNAL_SERVER_ERROR, "status (expected error)";
 
     my $abs = $file->absolute->canonpath;
+    my $msg = "Unable to open ${abs} for reading: No such file or directory";
 
     cmp_deeply $c->log->msgs,
       [
         {
             level   => "error",
-            message => all( isa('Catalyst::Exception'), methods( message => "Unable to open ${abs} for reading: No such file or directory" ) ),
+            message => all( isa('Catalyst::Exception'), methods( message => re( "^" . quotemeta($msg) ) ) ),
         }
       ],
       "logged exception";

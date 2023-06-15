@@ -4,6 +4,8 @@ Revision history for {{ $dist->name }}:
   [Enhancements]
   - Improved error handling when opening a file.
 
+  - The file opening error message includes the module path and line number where it failed.
+
 v0.1.6    2023-06-14 15:38:12+01:00 Europe/London
   [Documentation]
   - Added a SECURITY section.

@@ -6,6 +6,7 @@ use v5.14;
 
 use Moose::Role;
 
+use Feature::Compat::Try;
 use File::Spec;
 use File::stat;
 use IO::File;
@@ -80,10 +81,12 @@ sub serve_static_file {
 
     my $res = $c->res;
 
-    my $abs = File::Spec->rel2abs( "$path" );
+    my $abs = File::Spec->rel2abs("$path");
 
-    my $fh = eval { IO::File->new( $abs, "r" ) };
-    if ( defined $fh ) {
+    try {
+
+        my $fh = IO::File->new( $abs, "r" ) or die $!;
+
         binmode($fh);
         Plack::Util::set_io_path( $fh, $abs );
         $res->body($fh);
@@ -98,9 +101,9 @@ sub serve_static_file {
         $headers->last_modified( $stat->mtime );
 
     }
-    else {
-        my $error = $@ || $!;
-        Catalyst::Exception->throw( "Unable to open ${abs} for reading: ${error}" );
+    catch ($error) {
+
+        Catalyst::Exception->throw("Unable to open ${abs} for reading: ${error}");
     }
 
     return 1;
