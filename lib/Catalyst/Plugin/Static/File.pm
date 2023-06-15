@@ -6,12 +6,12 @@ use v5.14;
 
 use Moose::Role;
 
-use Feature::Compat::Try;
 use File::Spec;
 use File::stat;
 use IO::File;
 use Plack::MIME;
 use Plack::Util;
+use Try::Tiny;
 
 use namespace::autoclean;
 
@@ -101,10 +101,12 @@ sub serve_static_file {
         $headers->last_modified( $stat->mtime );
 
     }
-    catch ($error) {
+    catch {
 
+        my $error = $_;
         Catalyst::Exception->throw("Unable to open ${abs} for reading: ${error}");
-    }
+
+    };
 
     return 1;
 }
