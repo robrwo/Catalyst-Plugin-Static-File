@@ -4,7 +4,7 @@ Catalyst::Plugin::Static::File - Serve a specific static file
 
 # VERSION
 
-version v0.1.7
+version v0.2.0
 
 # SYNOPSIS
 
