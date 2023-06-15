@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Improved error handling when opening a file.
 
 v0.1.6    2023-06-14 15:38:12+01:00 Europe/London
   [Documentation]

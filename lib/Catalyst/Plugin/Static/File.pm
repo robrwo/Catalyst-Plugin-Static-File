@@ -82,7 +82,7 @@ sub serve_static_file {
 
     my $abs = File::Spec->rel2abs( "$path" );
 
-    my $fh = IO::File->new( $abs, "r" );
+    my $fh = eval { IO::File->new( $abs, "r" ) };
     if ( defined $fh ) {
         binmode($fh);
         Plack::Util::set_io_path( $fh, $abs );
@@ -99,7 +99,8 @@ sub serve_static_file {
 
     }
     else {
-        Catalyst::Exception->throw( "Unable to open ${abs} for reading: $!" );
+        my $error = $@ || $!;
+        Catalyst::Exception->throw( "Unable to open ${abs} for reading: ${error}" );
     }
 
     return 1;
