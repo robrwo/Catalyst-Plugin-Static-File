@@ -4,6 +4,9 @@ Revision history for {{ $dist->name }}:
   [Bug Fixes]
   - Re-added the file existence check that was removed in v0.1.3.
 
+  [Tests]
+  - Fixed an issue with locale-specific error messages.
+
 v0.2.0    2023-06-15 19:31:17+01:00 Europe/London
   [Enhancements]
   - Improved error handling when opening a file.
