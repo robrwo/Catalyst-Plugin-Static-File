@@ -85,6 +85,13 @@ sub serve_static_file {
 
     try {
 
+        # Ideally we could let the file open fail when a file does not exist, but this seems to cause the process to
+        # exit in a way that try/catch cannot handle on some systems.  We can risk a potential race condition where the
+        # file disappears between the existence check and opening: the worst case is that it would have the same effect
+        # as not checking for file existence.
+
+        die "No such file or directory" unless -e $abs;
+
         my $fh = IO::File->new( $abs, "r" ) or die $!;
 
         binmode($fh);
