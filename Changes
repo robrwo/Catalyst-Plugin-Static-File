@@ -13,6 +13,8 @@ Revision history for {{ $dist->name }}:
 
   - Added .editorconfig to the repository.
 
+  - Added .perltidyrc to the repository.
+
 v0.2.1    2023-06-19 09:40:45+01:00 Europe/London
   [Bug Fixes]
   - Re-added the file existence check that was removed in v0.1.3.
