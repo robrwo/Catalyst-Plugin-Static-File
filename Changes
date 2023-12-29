@@ -4,12 +4,12 @@ Revision history for {{ $dist->name }}:
   [Tests]
   - Switched package used for the release manifest.
 
+  - Added more author's tests.
+
   [Toolchain]
   - Fixed an error with the MANIFEST and remove files from the distribution.
 
   - Removed use of Generate::ManifestSkip plugin. It is now maintained manually.
-
-  - Added more author's tests.
 
   - Added .editorconfig to the repository.
 
