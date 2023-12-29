@@ -4,6 +4,11 @@ Revision history for {{ $dist->name }}:
   [Tests]
   - Switched package used for the release manifest.
 
+  [Toolchain]
+  - Fixed an error with the MANIFEST and remove files from the distribution.
+
+  - Removed use of Generate::ManifestSkip plugin. It is now maintained manually.
+
 v0.2.1    2023-06-19 09:40:45+01:00 Europe/London
   [Bug Fixes]
   - Re-added the file existence check that was removed in v0.1.3.
