@@ -9,7 +9,7 @@ Revision history for {{ $dist->name }}:
 
   - Removed use of Generate::ManifestSkip plugin. It is now maintained manually.
 
-  - Add author's test for Changes.
+  - Added more author's tests.
 
 v0.2.1    2023-06-19 09:40:45+01:00 Europe/London
   [Bug Fixes]
