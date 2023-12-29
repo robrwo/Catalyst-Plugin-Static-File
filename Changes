@@ -1,6 +1,8 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Tests]
+  - Switched package used for the release manifest.
 
 v0.2.1    2023-06-19 09:40:45+01:00 Europe/London
   [Bug Fixes]
