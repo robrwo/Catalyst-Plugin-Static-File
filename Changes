@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Updated copyright year.
+
   [Tests]
   - Adjusted tests to ignore extra keys in logged messages.
 
