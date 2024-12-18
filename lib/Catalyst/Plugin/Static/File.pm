@@ -52,7 +52,7 @@ It uses L<Plack::MIME> to identify the content type, but you can override that.
 
 =item *
 
-It adds a file path to the file handle, plays nicely with L<Plack::Middleware::XSendfile> and L<Plack::Middleware::ETag>.
+It adds a file path to the file handle, and plays nicely with L<Plack::Middleware::XSendfile> and L<Plack::Middleware::ETag>.
 
 =item *
 
