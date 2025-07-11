@@ -125,24 +125,27 @@ The L<serve_static_file> method does not validate the file that is passed to it.
 You should ensure that arbitrary filenames are not passed to it. You should strictly validate any external data that is
 used for generating the filename.
 
-=head1 SUPPORT FOR OLDER PERL VERSIONS
+=head1 prepend:SUPPORT
 
-This module requires Perl v5.14 or later.
+Only the latest version of this module will be supported.
 
-Future releases may only support Perl versions released in the last ten years.
+This module requires Perl v5.14 or later.  Future releases may only support Perl versions released in the last ten
+years.
+
+=head2 Bugs
+
+=head1 append:SUPPORT
+
+=head2 Reporting Security Vulnerabilities
+
+Security issues should not be reported on the bugtracker website.  Please see F<SECURITY.md> for instructions how to
+report security vulnerabilities
 
 =head1 SEE ALSO
 
 L<Catalyst>
 
 L<Catalyst::Plugin::Static::Simple>
-
-=head1 append:BUGS
-
-=head2 Reporting Security Vulnerabilities
-
-Security issues should not be reported on the bugtracker website.  Please see F<SECURITY.md> for instructions how to
-report security vulnerabilities
 
 =cut
 

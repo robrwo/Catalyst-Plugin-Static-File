@@ -60,12 +60,6 @@ The [serve\_static\_file](https://metacpan.org/pod/serve_static_file) method doe
 You should ensure that arbitrary filenames are not passed to it. You should strictly validate any external data that is
 used for generating the filename.
 
-# SUPPORT FOR OLDER PERL VERSIONS
-
-This module requires Perl v5.14 or later.
-
-Future releases may only support Perl versions released in the last ten years.
-
 # SEE ALSO
 
 [Catalyst](https://metacpan.org/pod/Catalyst)
@@ -77,7 +71,14 @@ Future releases may only support Perl versions released in the last ten years.
 The development version is on github at [https://github.com/robrwo/Catalyst-Plugin-Static-File](https://github.com/robrwo/Catalyst-Plugin-Static-File)
 and may be cloned from [git://github.com/robrwo/Catalyst-Plugin-Static-File.git](git://github.com/robrwo/Catalyst-Plugin-Static-File.git)
 
-# BUGS
+# SUPPORT
+
+Only the latest version of this module will be supported.
+
+This module requires Perl v5.14 or later.  Future releases may only support Perl versions released in the last ten
+years.
+
+## Bugs
 
 Please report any bugs or feature requests on the bugtracker website
 [https://github.com/robrwo/Catalyst-Plugin-Static-File/issues](https://github.com/robrwo/Catalyst-Plugin-Static-File/issues)
