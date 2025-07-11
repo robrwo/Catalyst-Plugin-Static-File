@@ -1,6 +1,9 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Incompatible Changes]
+  - Increased the minimum version of Catalyst to 5.90129.
+
   [Documentation]
   - Merged BUGS and SUPPORT FOR OLDER PERL VERSIONS into a SUPPORT section.
 

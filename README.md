@@ -78,6 +78,8 @@ Only the latest version of this module will be supported.
 This module requires Perl v5.14 or later.  Future releases may only support Perl versions released in the last ten
 years.
 
+This module requires Catalyst v5.90129 or later.
+
 ## Bugs
 
 Please report any bugs or feature requests on the bugtracker website
