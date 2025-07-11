@@ -118,7 +118,7 @@ sub serve_static_file {
     return 1;
 }
 
-=head1 SECURITY
+=head1 SECURITY CONSIDERATIONS
 
 The L<serve_static_file> method does not validate the file that is passed to it.
 

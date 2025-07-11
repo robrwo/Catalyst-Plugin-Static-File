@@ -53,7 +53,7 @@ It returns a true value on success.
 
 If you want to use conditional requests, use [Plack::Middleware::ConditionalGET](https://metacpan.org/pod/Plack%3A%3AMiddleware%3A%3AConditionalGET).
 
-# SECURITY
+# SECURITY CONSIDERATIONS
 
 The [serve\_static\_file](https://metacpan.org/pod/serve_static_file) method does not validate the file that is passed to it.
 

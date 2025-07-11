@@ -7,6 +7,8 @@ Revision history for {{ $dist->name }}:
   [Documentation]
   - Merged BUGS and SUPPORT FOR OLDER PERL VERSIONS into a SUPPORT section.
 
+  - Renamed SECURITY to SECURITY CONSIDERATIONS.
+
   - Fixed a minor typo.
 
 v0.2.3    2024-12-18 16:15:14+00:00 Europe/London
