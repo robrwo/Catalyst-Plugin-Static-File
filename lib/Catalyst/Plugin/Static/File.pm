@@ -134,7 +134,7 @@ years.
 
 This module requires Catalyst v5.90129 or later.
 
-=head2 Bugs
+=head2 Reporting Bugs and Submitting Feature Requests
 
 =head1 append:SUPPORT
 

@@ -80,7 +80,7 @@ years.
 
 This module requires Catalyst v5.90129 or later.
 
-## Bugs
+## Reporting Bugs and Submitting Feature Requests
 
 Please report any bugs or feature requests on the bugtracker website
 [https://github.com/robrwo/Catalyst-Plugin-Static-File/issues](https://github.com/robrwo/Catalyst-Plugin-Static-File/issues)
