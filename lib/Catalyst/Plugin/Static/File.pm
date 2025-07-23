@@ -15,7 +15,7 @@ use Try::Tiny;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.2.4';
+our $VERSION = 'v0.2.5';
 
 =head1 SYNOPSIS
 
