@@ -8,6 +8,9 @@ Revision history for {{ $dist->name }}:
 
   - Adjusted wording for consistency.
 
+  [Tests]
+  - Skip Plack::Middleware::XSendfile test if it is no installed.
+
   [Toolchain]
   - Improved Dist::Zilla configuration.
 
