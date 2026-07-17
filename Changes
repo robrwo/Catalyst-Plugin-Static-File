@@ -19,6 +19,8 @@ Revision history for {{ $dist->name }}:
   [Tests]
   - Skip Plack::Middleware::XSendfile test if it is no installed.
 
+  - Moved author tests into the xt directory.
+
   [Toolchain]
   - Improved Dist::Zilla configuration.
 
