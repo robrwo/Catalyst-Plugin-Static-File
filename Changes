@@ -14,6 +14,8 @@ Revision history for {{ $dist->name }}:
 
   - Fixed the git repo URL in SOURCE.
 
+  - Added doap.xml to the distribution.
+
   [Tests]
   - Skip Plack::Middleware::XSendfile test if it is no installed.
 

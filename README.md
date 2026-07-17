@@ -42,6 +42,7 @@ Changes for version v0.2.5 (2026-07-17)
     - Updated the copyright year.
     - Updated maintainer email.
     - Fixed the git repo URL in SOURCE.
+    - Added doap.xml to the distribution.
 - Tests
     - Skip Plack::Middleware::XSendfile test if it is no installed.
 - Toolchain
