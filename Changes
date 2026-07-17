@@ -12,6 +12,8 @@ Revision history for {{ $dist->name }}:
 
   - Updated maintainer email.
 
+  - Fixed the git repo URL in SOURCE.
+
   [Tests]
   - Skip Plack::Middleware::XSendfile test if it is no installed.
 

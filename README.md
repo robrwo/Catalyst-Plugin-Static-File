@@ -41,6 +41,7 @@ Changes for version v0.2.5 (2026-07-17)
     - Adjusted wording for consistency.
     - Updated the copyright year.
     - Updated maintainer email.
+    - Fixed the git repo URL in SOURCE.
 - Tests
     - Skip Plack::Middleware::XSendfile test if it is no installed.
 - Toolchain
@@ -131,7 +132,7 @@ report security vulnerabilities
 # SOURCE
 
 The development version is on github at [https://github.com/robrwo/Catalyst-Plugin-Static-File](https://github.com/robrwo/Catalyst-Plugin-Static-File)
-and may be cloned from [git://github.com/robrwo/Catalyst-Plugin-Static-File.git](git://github.com/robrwo/Catalyst-Plugin-Static-File.git)
+and may be cloned from [https://github.com/robrwo/Catalyst-Plugin-Static-File.git](https://github.com/robrwo/Catalyst-Plugin-Static-File.git)
 
 # AUTHOR
 
