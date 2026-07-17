@@ -46,6 +46,7 @@ Changes for version v0.2.5 (2026-07-17)
     - Skip Plack::Middleware::XSendfile test if it is no installed.
 - Toolchain
     - Improved Dist::Zilla configuration.
+    - Sign distribution with SigStore instead of Module::Signature.
 
 See the `Changes` file for more details.
 

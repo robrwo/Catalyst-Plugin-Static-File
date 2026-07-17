@@ -20,6 +20,8 @@ Revision history for {{ $dist->name }}:
   [Toolchain]
   - Improved Dist::Zilla configuration.
 
+  - Sign distribution with SigStore instead of Module::Signature.
+
 v0.2.4    2025-07-23 13:25:39+01:00 Europe/London
   [Incompatible Changes]
   - Increased the minimum version of Catalyst to 5.90129.
