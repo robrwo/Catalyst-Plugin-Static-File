@@ -58,6 +58,10 @@ It adds a file path to the file handle, and plays nicely with L<Plack::Middlewar
 
 It does not log anything.
 
+=item *
+
+It does not set Cache-Control or Expires headers.
+
 =back
 
 =method serve_static_file
@@ -124,6 +128,9 @@ The L<serve_static_file> method does not validate the file that is passed to it.
 
 You should ensure that arbitrary filenames are not passed to it. You should strictly validate any external data that is
 used for generating the filename.
+
+Cache-Control headers need to be set manually.
+If you set them, ensure that you have set the "public" or "private" status appropriately.
 
 =head1 prepend:SUPPORT
 

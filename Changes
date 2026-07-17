@@ -1,6 +1,10 @@
 Revision history for {{ $dist->name }}:
 
 {{$NEXT}}
+  [Documentation]
+  - Updated the documentation about Cache-Control and Expires headers.
+
+  - Updated the SECURITY CONSIDERATIONS section with a note about Cache-Control.
 
 v0.2.5    2026-07-17 14:34:09+01:00 Europe/London
   [Documentation]
