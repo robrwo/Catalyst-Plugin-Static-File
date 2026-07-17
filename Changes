@@ -10,6 +10,8 @@ Revision history for {{ $dist->name }}:
 
   - Updated the copyright year.
 
+  - Updated maintainer email.
+
   [Tests]
   - Skip Plack::Middleware::XSendfile test if it is no installed.
 

@@ -40,6 +40,7 @@ Changes for version v0.2.5 (2026-07-17)
     - Removed separate INSTALL file.
     - Adjusted wording for consistency.
     - Updated the copyright year.
+    - Updated maintainer email.
 - Tests
     - Skip Plack::Middleware::XSendfile test if it is no installed.
 - Toolchain
@@ -134,7 +135,7 @@ and may be cloned from [git://github.com/robrwo/Catalyst-Plugin-Static-File.git]
 
 # AUTHOR
 
-Robert Rothenberg <rrwo@cpan.org>
+Robert Rothenberg <perl@rhizomnic.com>
 
 # COPYRIGHT AND LICENSE
 
