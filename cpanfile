@@ -31,7 +31,6 @@ on 'test' => sub {
   requires "Plack::Builder" => "0";
   requires "Plack::Middleware::ConditionalGET" => "0";
   requires "Plack::Middleware::MethodOverride" => "0";
-  requires "Plack::Middleware::XSendfile" => "0";
   requires "Test::Log::Dispatch" => "0";
   requires "Test::More" => "0";
   requires "Test::Most" => "0";
@@ -51,7 +50,7 @@ on 'configure' => sub {
 };
 
 on 'develop' => sub {
-  requires "Dist::Zilla::Plugin::UsefulReadme" => "v0.3.0";
+  requires "Dist::Zilla::Plugin::UsefulReadme" => "v0.4.3";
   requires "Pod::Coverage::TrustPod" => "0";
   requires "Pod::Markdown::Github" => "0";
   requires "Software::Security::Policy::Individual" => "0.10";
