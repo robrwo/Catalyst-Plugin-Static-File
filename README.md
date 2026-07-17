@@ -46,6 +46,7 @@ Changes for version v0.2.5 (2026-07-17)
 - Tests
     - Skip Plack::Middleware::XSendfile test if it is no installed.
     - Moved author tests into the xt directory.
+    - Added more author tests.
 - Toolchain
     - Improved Dist::Zilla configuration.
     - Sign distribution with SigStore instead of Module::Signature.
